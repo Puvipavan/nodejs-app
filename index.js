@@ -7,7 +7,7 @@ let app = express();
 
 function getOutput(req){
     let message = process.env.MESSAGE;
-    return "<h1>"+output+"</h1>";
+    return "<h1>"+message+"</h1>";
 }
 app.get('/*', function(req, res){
     res.send(getOutput(req));
